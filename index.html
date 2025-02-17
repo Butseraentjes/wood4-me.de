@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wood4-me.de - Hochwertige Holz-Picknicktische</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --wood-primary: #8B4513;
+            --wood-secondary: #DEB887;
+            --wood-light: #F5DEB3;
+        }
+        .hero-section {
+            background-color: var(--wood-light);
+            position: relative;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(139, 69, 19, 0.1), rgba(222, 184, 135, 0.1));
+        }
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(139, 69, 19, 0.2);
+        }
+        .testimonial-card {
+            background-color: white;
+            border-left: 4px solid var(--wood-primary);
+        }
+        .wood-button {
+            background-color: var(--wood-primary);
+            transition: all 0.3s ease;
+        }
+        .wood-button:hover {
+            background-color: #723710;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-semibold text-[#8B4513]">
+                    Wood4-me.de
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-[#8B4513] hover:text-[#723710]">Home</a>
+                    <a href="#produkte" class="text-[#8B4513] hover:text-[#723710]">Produkte</a>
+                    <a href="#qualitaet" class="text-[#8B4513] hover:text-[#723710]">Qualität</a>
+                    <a href="#erfahrungen" class="text-[#8B4513] hover:text-[#723710]">Kundenerfahrungen</a>
+                    <a href="#kontakt" class="text-[#8B4513] hover:text-[#723710]">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-20">
+        <div class="max-w-6xl mx-auto px-4 relative">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-[#8B4513] mb-8">Willkommen bei Wood4-me.de</h1>
+                <p class="text-xl text-[#723710] mb-8">Entdecken Sie unsere hochwertigen Holz-Picknicktische - Handgefertigt für Generationen</p>
+                <a href="https://www.picknickbaenke.de/" class="wood-button text-white px-8 py-3 rounded-lg inline-block">
+                    Jetzt entdecken
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section id="qualitaet" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-[#8B4513] mb-12">Unsere Qualitätsversprechen</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="text-[#8B4513] text-4xl mb-4">🌳</div>
+                    <h3 class="text-xl font-semibold mb-4">Nachhaltiges Holz</h3>
+                    <p class="text-gray-600">Ausgewähltes Holz aus nachhaltigem Anbau für langlebige Qualität.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-[#8B4513] text-4xl mb-4">⚒️</div>
+                    <h3 class="text-xl font-semibold mb-4">Handwerkliche Präzision</h3>
+                    <p class="text-gray-600">Jeder Tisch wird mit höchster Sorgfalt gefertigt.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-[#8B4513] text-4xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-semibold mb-4">Wetterfest</h3>
+                    <p class="text-gray-600">Spezielle Imprägnierung für optimalen Schutz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produkte" class="py-16 bg-[#F5DEB3]">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-[#8B4513] mb-12">Unsere Bestseller</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden">
+                    <a href="https://www.picknickbaenke.de/">
+                        <img src="https://myshop.s3-external-3.amazonaws.com/shop2117100.pictures.K180basic400.jpg" alt="KING® Picknicktisch 2,00m" class="w-full h-48 object-cover hover:opacity-90 transition-opacity">
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">KING® Picknicktisch 2,00m</h3>
+                        <p class="text-gray-600 text-sm mb-4">45mm Plattenstärke, Ecken abgerundet, imprägniert</p>
+                        <a href="https://www.picknickbaenke.de/" class="wood-button text-white px-4 py-2 rounded inline-block">Mehr Infos</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden">
+                    <a href="https://www.picknickbaenke.de/">
+                        <img src="https://myshop.s3-external-3.amazonaws.com/shop2117100.pictures.KVK_front400.jpg" alt="KING® Picknicktisch quadratisch" class="w-full h-48 object-cover hover:opacity-90 transition-opacity">
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">KING® Picknicktisch quadratisch</h3>
+                        <p class="text-gray-600 text-sm mb-4">115cm x 115cm, perfekt für Ihren Garten</p>
+                        <a href="https://www.picknickbaenke.de/" class="wood-button text-white px-4 py-2 rounded inline-block">Mehr Infos</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden">
+                    <a href="https://www.picknickbaenke.de/">
+                        <img src="https://www.kingpicknicktafels.be/foto/kingcomfortnieuw-400.jpg" alt="KING® Komfort Picknicktisch" class="w-full h-48 object-cover hover:opacity-90 transition-opacity">
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">KING® Komfort Picknicktisch 2,40m</h3>
+                        <p class="text-gray-600 text-sm mb-4">Extra stabil für maximalen Komfort</p>
+                        <a href="https://www.picknickbaenke.de/" class="wood-button text-white px-4 py-2 rounded inline-block">Mehr Infos</a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden">
+                    <a href="https://www.picknickbaenke.de/">
+                        <img src="https://myshop.s3-external-3.amazonaws.com/shop2117100.pictures.K300_400.jpg" alt="KING® Picknicktisch 3,00m" class="w-full h-48 object-cover hover:opacity-90 transition-opacity">
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">KING® Picknicktisch 3,00m</h3>
+                        <p class="text-gray-600 text-sm mb-4">Ideal für große Familien und Feste</p>
+                        <a href="https://www.picknickbaenke.de/" class="wood-button text-white px-4 py-2 rounded inline-block">Mehr Infos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="erfahrungen" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-[#8B4513] mb-12">Was unsere Kunden sagen</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4">"Wir haben den KING® Picknicktisch 2,40m für unseren Garten gekauft. Die Qualität ist hervorragend, und der Aufbau war sehr einfach. Perfekt für unsere Familienfeste!"</p>
+                    <p class="font-semibold">- Familie Schmidt aus München</p>
+                </div>
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4">"Der quadratische Picknicktisch ist genau das, was wir für unsere Terrasse gesucht haben. Robust, wetterbeständig und sehr schön verarbeitet."</p>
+                    <p class="font-semibold">- Thomas Meyer, Restaurantbesitzer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-[#F5DEB3]">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-[#8B4513] mb-12">Warum Wood4-me?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-[#8B4513]">Qualität die überzeugt</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>✓ Hochwertige Materialien aus nachhaltiger Forstwirtschaft</li>
+                        <li>✓ Robuste Konstruktion für jahrelange Nutzung</li>
+                        <li>✓ Wetterfest durch spezielle Imprägnierung</li>
+                        <li>✓ Handwerkliche Verarbeitung</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-[#8B4513]">Service der begeistert</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>✓ Kostenlose Lieferung</li>
+                        <li>✓ Fachkundige Beratung</li>
+                        <li>✓ Einfache Montage</li>
+                        <li>✓ 2 Jahre Garantie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-[#8B4513] mb-12">Kontakt</h2>
+            <div class="text-center">
+                <p class="text-gray-600 mb-2">E-Products Deutschland GmbH</p>
+                <p class="text-gray-600 mb-2">Hoffmannallee 41 - 51</p>
+                <p class="text-gray-600 mb-2">47533 Kleve, Deutschland</p>
+                <p class="text-gray-600 mb-2">USt-IdNr.: DE298706463</p>
+                <p class="text-gray-600 mb-2">Handelsregister: HRB 13211</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#8B4513] text-white py-8">
+        <div class="
