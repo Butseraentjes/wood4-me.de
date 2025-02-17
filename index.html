@@ -7,21 +7,23 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
         :root {
-            --wood-dark: #5D4037;
-            --wood-primary: #8B4513;
-            --wood-secondary: #A1887F;
-            --wood-light: #D7CCC8;
-            --wood-accent: #EFEBE9;
+            --wood-dark: #8B7355;
+            --wood-primary: #C4A484;
+            --wood-secondary: #DEB887;
+            --wood-light: #F5DEB3;
+            --wood-accent: #FAF0E6;
+            --text-dark: #4A3728;
         }
         body {
-            background-color: var(--wood-accent);
+            background-color: var(--wood-light);
+            color: var(--text-dark);
         }
         .hero-section {
             background: linear-gradient(135deg, var(--wood-dark), var(--wood-primary));
-            color: var(--wood-accent);
+            color: white;
         }
         .wood-gradient {
-            background: linear-gradient(135deg, var(--wood-primary), var(--wood-secondary));
+            background: linear-gradient(135deg, var(--wood-dark), var(--wood-primary));
         }
         .product-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -55,14 +57,14 @@
     <nav class="bg-white shadow-lg">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
-                <div class="text-xl font-semibold text-[#5D4037]">
+                <div class="text-xl font-semibold text-[#4A3728]">
                     Wood4-me.de
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-[#5D4037] hover:text-[#8B4513]">Home</a>
-                    <a href="#produkte" class="text-[#5D4037] hover:text-[#8B4513]">Produkte</a>
-                    <a href="#qualitaet" class="text-[#5D4037] hover:text-[#8B4513]">Qualität</a>
-                    <a href="#erfahrungen" class="text-[#5D4037] hover:text-[#8B4513]">Kundenerfahrungen</a>
+                    <a href="#home" class="text-[#4A3728] hover:text-[#8B7355]">Home</a>
+                    <a href="#produkte" class="text-[#4A3728] hover:text-[#8B7355]">Produkte</a>
+                    <a href="#qualitaet" class="text-[#4A3728] hover:text-[#8B7355]">Qualität</a>
+                    <a href="#erfahrungen" class="text-[#4A3728] hover:text-[#8B7355]">Kundenerfahrungen</a>
                     <a href="https://www.picknickbaenke.de/" class="wood-button text-white px-4 py-2 rounded">Zum Shop</a>
                 </div>
             </div>
